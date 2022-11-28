@@ -8,6 +8,7 @@ enum StatusLevel: string
     case PENDING = 'PENDING';
     case SUCCESS = 'SUCCESS';
     case FAILURE = 'FAILURE';
+    case CANCELED = 'CANCELED';
 
     public function color(): string
     {
@@ -16,6 +17,7 @@ enum StatusLevel: string
             StatusLevel::PENDING => 'yellow',
             StatusLevel::SUCCESS => 'green',
             StatusLevel::FAILURE => 'red',
+            StatusLevel::CANCELED => 'gray',
         };
     }
 }
